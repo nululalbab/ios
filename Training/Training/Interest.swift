@@ -12,31 +12,30 @@ class Interest
 {
     // MARK: - Public API
     var title = ""
-    var description = ""
-    var numberOfMembers = 0
-    var numberOfPosts = 0
-    var featuredImage: UIImage!
+    var featuredImage: UIImage
+    var color: UIColor
     
-    init(title: String, description: String, featuredImage: UIImage!)
+    init(title: String, featuredImage: UIImage, color: UIColor)
     {
         self.title = title
-        self.description = description
         self.featuredImage = featuredImage
-        numberOfMembers = 1
-        numberOfPosts = 1
+        self.color = color
     }
     
     // MARK: - Private
     // dummy data
-    static func createInterests() -> [Interest]
+    static func fetchInterests() -> [Interest]
     {
         return [
-            Interest(title: "We Love Traveling Around the World", description: "We love backpack and adventures! We walked to Antartica yesterday, and camped with some cute pinguines, and talked about this wonderful app idea. 🐧⛺️✨", featuredImage: UIImage(named: "r1")!),
-            Interest(title: "Romance Stories", description: "We love romantic stories. We walked to Antartica yesterday, and camped with some cute pinguines, and talked about this wonderful app idea. 🐧⛺️✨", featuredImage: UIImage(named: "r2")!),
-            Interest(title: "iOS Dev", description: "Create beautiful apps. We walked to Antartica yesterday, and camped with some cute pinguines, and talked about this wonderful app idea. 🐧⛺️✨", featuredImage: UIImage(named: "r3")!),
-            Interest(title: "Race", description: "Cars and aircrafts and boats and sky. We walked to Antartica yesterday, and camped with some cute pinguines, and talked about this wonderful app idea. 🐧⛺️✨", featuredImage: UIImage(named: "r4")!),
-            Interest(title: "Personal Development", description: "Meet life with full presence. We walked to Antartica yesterday, and camped with some cute pinguines, and talked about this wonderful app idea. 🐧⛺️✨", featuredImage: UIImage(named: "r5")!),
-            Interest(title: "Reading News", description: "Get up to date with breaking-news. We walked to Antartica yesterday, and camped with some cute pinguines, and talked about this wonderful app idea. 🐧⛺️✨", featuredImage: UIImage(named: "r6")!),
+            Interest(title: "Vans Triple Crown Sport Photography", featuredImage: UIImage(named: "f1")!, color: UIColor(red: 63/255.0, green: 71/255.0, blue: 80/255.0, alpha: 0.8)),
+            Interest(title: "Cafe Photographer", featuredImage: UIImage(named: "f2")!, color: UIColor(red: 240/255.0, green: 133/255.0, blue: 91/255.0, alpha: 0.8)),
+            Interest(title: "Still Life Photographer", featuredImage: UIImage(named: "f3")!, color: UIColor(red: 105/255.0, green: 80/255.0, blue: 227/255.0, alpha: 0.8)),
+            Interest(title: "Street Photography", featuredImage: UIImage(named: "f4")!, color: UIColor(red: 102/255.0, green: 102/255.0, blue: 102/255.0, alpha: 0.8)),
+            
+            Interest(title: "Landscape Photography", featuredImage: UIImage(named: "f5")!, color: UIColor(red: 245/255.0, green: 62/255.0, blue: 40/255.0, alpha: 0.8)),
+            Interest(title: "Human Interest Photography", featuredImage: UIImage(named: "f6")!, color: UIColor(red: 103/255.0, green: 217/255.0, blue: 87/255.0, alpha: 0.8)),
+            Interest(title: "Ethnic Photography", featuredImage: UIImage(named: "f7")!, color: UIColor(red: 63/255.0, green: 71/255.0, blue: 80/255.0, alpha: 0.8)),
+            Interest(title: "Slow Speed Photography", featuredImage: UIImage(named: "f8")!, color: UIColor(red: 240/255.0, green: 133/255.0, blue: 91/255.0, alpha: 0.8)),
         ]
     }
 }
