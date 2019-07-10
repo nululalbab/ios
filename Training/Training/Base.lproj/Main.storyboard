@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aox-pw-MAM">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aox-pw-MAM">
                                 <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Have Joined Vans Surf Hunting" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rL5-xj-zBz">
                                         <rect key="frame" x="26" y="16" width="189" height="66"/>
@@ -45,8 +44,20 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Aox-pw-MAM" firstAttribute="centerX" secondItem="ITO-y8-ePO" secondAttribute="centerX" id="8qm-uo-gBn"/>
+                            <constraint firstItem="ADx-M4-YVb" firstAttribute="bottom" secondItem="Aox-pw-MAM" secondAttribute="bottom" constant="350" id="FXv-AW-RFU"/>
+                            <constraint firstItem="Aox-pw-MAM" firstAttribute="centerY" secondItem="ITO-y8-ePO" secondAttribute="centerY" id="G8H-Ih-WJv"/>
+                            <constraint firstItem="Aox-pw-MAM" firstAttribute="leading" secondItem="ADx-M4-YVb" secondAttribute="leading" constant="87" id="TOD-bi-cnP"/>
+                            <constraint firstItem="ADx-M4-YVb" firstAttribute="trailing" secondItem="Aox-pw-MAM" secondAttribute="trailing" constant="87" id="sYy-hv-GOh"/>
+                            <constraint firstItem="Aox-pw-MAM" firstAttribute="top" secondItem="ADx-M4-YVb" secondAttribute="top" constant="340" id="uX0-oz-qBu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ADx-M4-YVb"/>
                     </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="lOo-hD-ElK" id="Ycm-nK-Gyh"/>
+                        <outlet property="viewSquare" destination="Aox-pw-MAM" id="9Fy-3u-FY2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3I-oG-uDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
